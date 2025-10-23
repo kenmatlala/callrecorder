@@ -1,0 +1,7 @@
+{
+  "yaml.schemaDownload.enable": false,
+
+  "yaml.schemas": {
+    "https://json.schemastore.org/pubspec": "pubspec.yaml"
+  }
+}

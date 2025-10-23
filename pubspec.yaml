@@ -1,0 +1,48 @@
+name: call_recorder_app
+description: A phone call recorder with Google Drive backup
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core dependencies
+  permission_handler: ^11.0.1
+  flutter_contacts: ^1.1.7+1
+  path_provider: ^2.1.1
+  record: ^6.1.2
+  audioplayers: ^5.2.1
+  url_launcher: ^6.2.1
+  http: ^1.1.0
+  intl: ^0.18.1
+
+  # Call log access - ADD THIS LINE
+  call_log: ^6.0.1
+
+  device_info_plus: ^9.0.0
+
+  # Google Drive Integration
+  google_sign_in: ^6.1.5
+  googleapis: ^11.4.0
+  googleapis_auth: ^1.4.1
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#4F46E5"
+  adaptive_icon_foreground: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
